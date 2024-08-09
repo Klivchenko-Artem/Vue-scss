@@ -1,0 +1,78 @@
+@use "../Mixins.scss" as *;
+
+.component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 940px;
+    height: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+
+.section-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 25px 0 0;
+
+
+        h1 {
+            font-size: clamp(24px, 8vw, 58px);
+
+            padding:  30% 0;
+        }
+
+        h2 {
+            font-size: clamp(12px, 4vw, 16px);
+            color: rgba(0, 0, 0, 0.6);
+            margin:40% 0
+        }
+
+        a {
+            @include link-style(#8a2be2);
+            font-size: clamp(14px, 4vw, 16px);
+        }
+    }
+    .section-two {
+      
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+@media (max-width: 320px) {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0;
+    height: 480px;  
+    
+    
+
+    .section-one {
+        
+        min-width: 100%;
+
+
+        
+        h1 {
+            margin: 0 0 15px 0;
+
+        }
+
+        h2 {
+            margin: 0 0 25px 0;
+
+        }
+
+        
+    }
+
+    
+}
+}
+
+
+

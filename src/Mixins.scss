@@ -1,0 +1,6 @@
+@mixin link-style($font-weight: 500) {
+    color: blueviolet;
+    text-transform: uppercase;
+    font-weight: $font-weight;
+    text-decoration: none;
+}
